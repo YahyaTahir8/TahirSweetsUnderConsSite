@@ -179,11 +179,18 @@
       /* Ensures spacing inside */
     }
 
-    .footer p {
-      margin: 0;
-      font-size: 16px;
-      /* Removes default margin for proper alignment */
-    }
+    .header p, .footer p {
+  margin: 0;
+  font-size: 22px; /* Default font size for desktop */
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .header p, .footer p {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+}
+
 
 
     .header {
@@ -212,20 +219,16 @@
       /* Ensures spacing inside */
     }
 
-    .header p {
-      margin: 0;
-      font-size: 16px;
-      /* Removes default margin that can cause misalignment */
-    }
+    
   </style>
 </head>
 
 <body>
-  <div class="header">
+  
+  <div class="container">
+<div class="header">
     <p>“Freshly baked happiness, just for you!” 🥐</p>
   </div>
-  <div class="container">
-
 
     <div class="left-column">
       <img class="cons breathe" src="/images/underConstruction.png" alt="Coming Soon"
